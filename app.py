@@ -8,3 +8,11 @@ app = Flask(__name__)
 @app.route('/', methods=['GET'])
 def index():
     return 'Hello, world!'
+
+@app.route('/welcome', methods=['GET'])
+def welcome():
+    return 'Welcome to an amazing Flask App!'
+
+@app.route('/goodbye', methods=['GET'])
+def goodbye():
+    return 'Thanks for looking around. Come back again soon!'
